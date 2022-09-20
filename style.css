@@ -49,6 +49,7 @@
     --danger: #ff8d6b;
     --light: #efc2b3;
     --dark: #1a2456;
+    --black: #212529;
 
 }
 
@@ -82,16 +83,6 @@
     align-items: center;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    font-size: 16px;
-
-    font-family: 'Prompt', sans-serif;
-
-}
 
 ul {
     display: flex;
@@ -107,6 +98,106 @@ a {
     text-decoration: none;
     color: #fff;
 }
+
+/*dropdown style*/
+
+.dropdown-holder {
+    position: relative;
+}
+
+.dropdown-holder:hover .dropdown-button > * {
+    color: #d9d9d9 !important;
+}
+
+.item-list {
+
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    background-color: var(--white);
+    width: 220px;
+    padding: 10px 0px;
+}
+
+
+.currency-dropdown {
+    left: -45px;
+    width: 100px;
+}
+
+.item-list ul {
+
+    display: block;
+    margin: 0;
+}
+
+.item-list ul li {
+    margin: 0px !important;
+    width: 100%;
+}
+
+.item-list li:hover {
+    background-color: #d9d9d9;
+}
+
+.item-list ul li a{
+
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-300);
+    line-height: var(--line-height-medium);
+    letter-spacing: var(--letter-spacing-normal);
+
+    margin: 0 30px;
+
+}
+
+/*event classes*/
+
+.dropDown_show {
+    display: block;
+}
+
+.active {
+    background-color: var(--blue);
+}
+
+.active a {
+    color: #fff !important;
+}
+
+.active:hover {
+    background-color: var(--blue) !important;
+}
+
+.focus > *{
+    color: #fff !important;
+}
+
+.dropdown-holder:hover .focus > * {
+    color: #fff !important;
+}
+
+
+/*basic conf*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 16px;
+
+    font-family: 'Prompt', sans-serif;
+
+}
+
+body {
+    background-color: #f0efed;
+}
+
 
 /*NAVIGATION*/
 
@@ -128,11 +219,15 @@ a {
 .navigation p, a {
     color: var(--light);
     text-transform: uppercase;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     font-size: var(--font-size-super-small);
     font-weight: var(--font-weight-400);
     letter-spacing: var(--letter-spacing-normal);
     line-height: var(--line-height-medium);
+}
+
+.nav-wrapper ul li {
+    margin-left: 30px;
 }
 
 /*svg navigation*/
