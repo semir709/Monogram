@@ -10,6 +10,8 @@
 </head>
 <body>
 
+    <div id="filter"></div>
+
     <header class="navigation-wrapper">
 
         <div class="container-fluid flex navigation">
@@ -20,15 +22,30 @@
 
             <div class="nav-wrapper flex">
 
-                <nav>
+                <div class="menu-holder" id="menu-holder">
+                    <i id="menu-btn" class='bx bx-menu' style='color:#efc2b3'></i>
+                </div>
+
+                <nav class="nav-item" id="nav-item">
+
+                    <div class="flex mobile-logo-holder">
+
+                        <div class="logo-mobile logo">
+                            <p>MONOGRAM</p>
+                        </div>
+    
+                        <i id="close-btn" class='bx bx-x' style='color:#efc2b3'></i>
+
+                    </div>
+        
 
                     <ul>
-                        <li> <a href="#">How it works</a> </li>
-                        <li class="flex arrow-svg dropdown-holder" >
+                        <li class="item"> <a href="#">How it works</a> </li>
+                        <li class="flex arrow-svg dropdown-holder item" >
 
-                            <div class="dropdown-button">
+                            <div class="dropdown-button ">
                                 <a href="#">Workflows</a>
-                                <i class='bx bxs-down-arrow ' style='color:#efc2b3' ></i>
+                                <i class='bx bxs-down-arrow arrow-workflow' style='color:#efc2b3' ></i>
                             </div>
 
                             <div class="item-list">
@@ -43,17 +60,17 @@
                             </div>
 
                         </li>
-                        <li> <a href="#">Download</a> </li>
-                        <li> <a href="#">Blog</a> </li>
-                        <li> <a href="#">Support</a> </li>
-                        <li> <a href="#">Shop</a> </li>
+                        <li class="item"> <a href="#">Download</a> </li>
+                        <li class="item"> <a href="#">Blog</a> </li>
+                        <li class="item"> <a href="#">Support</a> </li>
+                        <li class="item"> <a href="#">Shop</a> </li>
                     </ul>
     
                 </nav>
     
                 <div class="shop-container flex">
     
-                    <i class='bx bx-shopping-bag ' style='color:#efc2b3'></i>
+                    <i class='bx bx-shopping-bag' id="bag-shop" style='color:#efc2b3'></i>
     
                     <div class="flex arrow-svg dropdown-holder">
     

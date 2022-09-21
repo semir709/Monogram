@@ -1,6 +1,8 @@
 const dropdown_btn = document.querySelectorAll('.dropdown-button');
 
 
+
+/*dropdown event*/
 dropdown_btn.forEach(el => {
 
     el.addEventListener('click', (e) => {
@@ -9,12 +11,14 @@ dropdown_btn.forEach(el => {
         const item_selected = e.target.closest('.dropdown-holder').querySelector('.dropdown-button');
 
         item_selected.classList.toggle('focus');
-        item_list.classList.toggle('dropDown_show');
+        item_list.classList.toggle('show');
 
     });
 
 });
 
+
+/*select currency*/
 const currency_dropdown = document.querySelector('.currency-dropdown');
 const allcurrencyList = currency_dropdown.querySelectorAll('li');
 const currency_show = document.querySelector('#currency');
@@ -32,3 +36,34 @@ currency_dropdown.addEventListener('click', (e) => {
     currency_show.innerHTML = list.querySelector('a').innerHTML;
 
 });
+
+
+
+
+/*mobile menu event*/
+
+const menu_btn = document.querySelector('#menu-btn');
+const nav_item = document.querySelector('#nav-item');
+const filter = document.querySelector('#filter');
+
+menu_btn.addEventListener('click', (e) => {
+
+    nav_item.classList.add('show');
+    filter.classList.add('show');
+
+});
+
+const close_btn = document.querySelector('#close-btn');
+
+close_btn.addEventListener('click', (e) => {
+
+    nav_item.classList.remove('show');
+    filter.classList.remove('show');
+
+});
+
+
+
+
+/*bag shop event*/
+const bag_shop = document.querySelector('#bag-shop');
