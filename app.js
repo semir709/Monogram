@@ -48,8 +48,8 @@ const filter = document.querySelector('#filter');
 
 menu_btn.addEventListener('click', (e) => {
 
-    nav_item.classList.add('show');
-    filter.classList.add('show');
+    nav_item.classList.add('show_menu_mobile');
+    filter.classList.add('filter_show');
 
 });
 
@@ -57,13 +57,17 @@ const close_btn = document.querySelector('#close-btn');
 
 close_btn.addEventListener('click', (e) => {
 
-    nav_item.classList.remove('show');
-    filter.classList.remove('show');
+    nav_item.classList.remove('show_menu_mobile');
+    filter.classList.remove('filter_show');
 
 });
 
 
-
-
 /*bag shop event*/
 const bag_shop = document.querySelector('#bag-shop');
+
+bag_shop.addEventListener('click', (e) => {
+
+    
+
+});
