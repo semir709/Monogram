@@ -48,7 +48,7 @@ const filter = document.querySelector('#filter');
 
 menu_btn.addEventListener('click', (e) => {
 
-    nav_item.classList.add('show_menu_mobile');
+    nav_item.classList.add('show_menu');
     filter.classList.add('filter_show');
 
 });
@@ -57,23 +57,62 @@ const close_btn = document.querySelector('#close-btn');
 
 close_btn.addEventListener('click', (e) => {
 
-    nav_item.classList.remove('show_menu_mobile');
+    nav_item.classList.remove('show_menu');
     filter.classList.remove('filter_show');
 
 });
 
 filter.addEventListener('click', (e) => {
 
-    nav_item.classList.remove('show_menu_mobile');
+    nav_item.classList.remove('show_menu');
     filter.classList.remove('filter_show');
 });
 
 
 /*bag shop event*/
+
+const shop_menu_holder = document.querySelector('#shop-menu-holder');
 const bag_shop = document.querySelector('#bag-shop');
+const close_btn_shop = document.querySelector('#shop-head-close');
 
 bag_shop.addEventListener('click', (e) => {
 
+    shop_menu_holder.classList.add('show_menu');
+    filter.classList.add('filter_show');
+
+});
+
+close_btn_shop.addEventListener('click', (e) => {
+
+    shop_menu_holder.classList.remove('show_menu');
+    filter.classList.remove('filter_show');
     
+});
+
+const gift_card = document.querySelector('#gift-card');
+const gift_btn = document.querySelector('#gift-buttons');
+
+const chekout_btn = document.querySelector('#chekout-btn');
+const checkout_input = document.querySelector('#chekout-input');
+
+const gift_cancle = gift_btn.querySelector('a:last-child');
+
+gift_card.addEventListener('click', (e) => {
+
+    gift_btn.style.display = 'flex';
+    e.target.style.display = 'none';
+
+    checkout_input.style.display = 'block';
+    chekout_btn.style.display = 'none';
+
+});
+
+gift_cancle.addEventListener('click', (e) => {
+
+    gift_btn.style.display = 'none';
+    gift_card.style.display = 'block';
+
+    checkout_input.style.display = 'none';
+    chekout_btn.style.display = 'block';
 
 });
