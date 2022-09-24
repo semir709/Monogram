@@ -369,6 +369,13 @@ body {
 /*mid shop*/
 .mid-shop-holder {
     flex: 1 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
 }
 
 .mid-shop-holder h2 {
@@ -378,6 +385,8 @@ body {
     letter-spacing: var(--letter-spacing-normal);
 
     color: var(--blue);
+
+    margin-top: 90px;
 }
 
 .mid-shop-holder p {
@@ -386,43 +395,183 @@ body {
     line-height: var(--line-height-medium);
     color: #6c757d !important;
     text-transform: none;
+
+    width: 280px;
+    text-align: center;
+
+    margin-top: 10px;
 }
 
 .mid-shop-holder p b {
     color: var(--red);
 }
 
-.info-shop-holder i {
-    font-size: 100px;
+.info-shop-holder {
+    margin-top: 50px;
+    width: 100%;
 }
 
-.info-shop-holder div h3 {
+.info-shop-holder div {
+    justify-content: center;
+}
+
+.info-shop-holder i {
+    font-size: 80px;
+}
+
+.info-shop-more {
+    width: 65%;
+    margin-left: 10px;
+}
+
+.info-shop-more h3 {
 
     letter-spacing: var(--letter-spacing-small);
     font-size: var(--font-size-normal);
     font-weight: var(--font-weight-600);
     line-height: var(--line-height-normal);
     color: var(--blue);
-
-
 }
 
-.info-shop-holder div p {
+.info-shop-more p {
     font-size: .7rem;
     font-weight: var(--font-weight-300);
     line-height: var(--line-height-medium);
     color: var(--blue) !important;
     text-transform: none;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+.payments-shop-holder {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.payments-shop-holder P {
+    font-size: 70%;
+    font-weight: var(--font-weight-300);
+    line-height: var(--line-height-medium);
+    width: 100%;
+    text-align: center;
+}
+
+.payments-shop-holder div {
+    justify-content: center;
+}
+
+.payments-shop-holder div img{
+    margin-left: 10px;
 }
 
 /*bottom shop*/
 .bottom-shop-holder {
     width: 100%;
     background-color: var(--blue);
-    height: 100px;
+    
+}
+
+.bottom-shop-holder .price-holder {
+
+    color: #fff;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.bottom-shop-holder .price-holder p, h3{
+    color: #fff;
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-normal);
+
+}
+
+.button-input-holder {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.button-input-holder button {
+    border-radius: 20px;
+    border: 1px solid;
+    padding: 10px;
+    width: 90%;
+    border-color: var(--pink);
+    background-color: var(--pink);
+    text-transform: uppercase;
+
+    font-size: .9rem;
+    line-height: 1.8;
+    letter-spacing: var(--letter-spacing-normal);
+
+    display: block;
+}
+
+.button-input-holder input {
+    display: none;
+
+    border-radius: 20px;
+    border: none !important;
+    padding: 10px;
+    width: 90%;
+    background-color: var(--white);  
+}
+
+.button-input-holder input::placeholder {
+    color: #9d9c9c;
+    font-weight: var(--font-weight-300)
+}
+
+.button-input-holder input:focus-visible {
+    outline: none;
+}
+
+.link-button-holder {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.link-button-holder a {
+
+    font-weight: var(--font-weight-300);
+    font-size: var(--font-size-extra-small);
+    letter-spacing: var(--letter-spacing-x-small);
+    line-height: var(--line-height-medium);
+    text-transform: uppercase;
+}
+
+.link-button-holder a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.link-button-holder a {
+    display: block;
+
+    color: var(--orange);
+
+}
+
+.link-button-holder div a {
+    display: none;
 }
 
 
+.link-button-holder div a:last-child {
+    color: #868686;
+    margin-left: 20px;
+
+}
 /*navigation query*/
 
 @media (max-width: 991px) {
