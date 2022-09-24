@@ -62,6 +62,12 @@ close_btn.addEventListener('click', (e) => {
 
 });
 
+filter.addEventListener('click', (e) => {
+
+    nav_item.classList.remove('show_menu_mobile');
+    filter.classList.remove('filter_show');
+});
+
 
 /*bag shop event*/
 const bag_shop = document.querySelector('#bag-shop');

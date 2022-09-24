@@ -103,6 +103,10 @@ i:hover {
     cursor: pointer;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /*dropdown style*/
 
 .dropdown-holder {
@@ -314,10 +318,116 @@ body {
 }
 
 
+/*shop holder style*/
+
+.shop-menu-holder {
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #fff;
+    width: 350px;
+    height: 100%;
+
+    text-transform: uppercase !important;
+
+}
+
+/*head shop*/
+.head-shop-holder {
+    background-color: var(--blue);
+    width: 100%;
+    height: 80px;
+    color: #fff;
+}
+
+.head-shop-holder button {
+
+    display: flex;
+    align-items: center;
+
+    color: inherit;
+    background-color: transparent;
+    border: none;
+
+    text-transform: uppercase;
+
+    letter-spacing: var(--letter-spacing-em);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-medium);
+    font-size: var(--font-size-small);
+}  
+
+.head-shop-holder button i{
+    font-size: 35px;
+}  
+
+
+/*mid shop*/
+.mid-shop-holder {
+    flex: 1 0 auto;
+}
+
+.mid-shop-holder h2 {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-300);
+    line-height: var(--line-height-normal);
+    letter-spacing: var(--letter-spacing-normal);
+
+    color: var(--blue);
+}
+
+.mid-shop-holder p {
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-300);
+    line-height: var(--line-height-medium);
+    color: #6c757d !important;
+    text-transform: none;
+}
+
+.mid-shop-holder p b {
+    color: var(--red);
+}
+
+.info-shop-holder i {
+    font-size: 100px;
+}
+
+.info-shop-holder div h3 {
+
+    letter-spacing: var(--letter-spacing-small);
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-normal);
+    color: var(--blue);
+
+
+}
+
+.info-shop-holder div p {
+    font-size: .7rem;
+    font-weight: var(--font-weight-300);
+    line-height: var(--line-height-medium);
+    color: var(--blue) !important;
+    text-transform: none;
+}
+
+/*bottom shop*/
+.bottom-shop-holder {
+    width: 100%;
+    background-color: var(--blue);
+    height: 100px;
+}
+
 
 /*navigation query*/
 
 @media (max-width: 991px) {
+
+    /*navigatio query*/
 
     #close-btn {
         display: block;
