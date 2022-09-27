@@ -51,6 +51,8 @@ menu_btn.addEventListener('click', (e) => {
     nav_item.classList.add('show_menu');
     filter.classList.add('filter_show');
 
+    document.body.classList.add('stop-scrolling');
+
 });
 
 const close_btn = document.querySelector('#close-btn');
@@ -59,6 +61,8 @@ close_btn.addEventListener('click', (e) => {
 
     nav_item.classList.remove('show_menu');
     filter.classList.remove('filter_show');
+
+    document.body.classList.remove('stop-scrolling');
 
 });
 
@@ -80,12 +84,16 @@ bag_shop.addEventListener('click', (e) => {
     shop_menu_holder.classList.add('show_menu');
     filter.classList.add('filter_show');
 
+    document.body.classList.add('stop-scrolling');
+
 });
 
 close_btn_shop.addEventListener('click', (e) => {
 
     shop_menu_holder.classList.remove('show_menu');
     filter.classList.remove('filter_show');
+
+    document.body.classList.remove('stop-scrolling');
     
 });
 
@@ -166,10 +174,4 @@ img_card.forEach(el => {
 
     });
 
-});
-
-const next = document.querySelector('#next');
-
-next.addEventListener('click', (e) => {
-    console.log('bum');
 });
