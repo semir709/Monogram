@@ -1226,7 +1226,7 @@ body {
 @media (max-width: 768px) {
 
     .main-section {
-        height: 40vh;
+        height: 80vh;
     }
 
     .items-holder{
