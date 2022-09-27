@@ -167,3 +167,9 @@ img_card.forEach(el => {
     });
 
 });
+
+const next = document.querySelector('#next');
+
+next.addEventListener('click', (e) => {
+    console.log('bum');
+});
