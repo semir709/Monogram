@@ -116,3 +116,54 @@ gift_cancle.addEventListener('click', (e) => {
     chekout_btn.style.display = 'block';
 
 });
+
+
+/*Hover card events*/
+
+const card_info = document.querySelectorAll('.card-info-holder');
+
+card_info.forEach(el => {
+
+    el.addEventListener('mouseover', (e) => {
+
+        const parent = e.target.closest('.card-info-holder');
+        const button = parent.querySelector('.shop-card-btn');
+        parent.classList.add('hover-info');
+        button.classList.add('hover-btn');
+
+    });
+
+    el.addEventListener('mouseout', (e) => {
+
+        const parent = e.target.closest('.card-info-holder');
+        const button = parent.querySelector('.shop-card-btn');
+        parent.classList.remove('hover-info');
+        button.classList.remove('hover-btn');
+
+    });
+});
+
+const img_card = document.querySelectorAll('.card-image-holder');
+
+img_card.forEach(el => {
+
+    el.addEventListener('mouseover', (e) => {
+
+        const img = e.target.closest('.card-image-holder').querySelector('.replace-img');
+        const btn = e.target.closest('.card').querySelector('.shop-card-btn');
+
+        img.classList.add('hover-img');
+        btn.classList.add('hover-btn');
+
+    });
+
+    el.addEventListener('mouseout', (e) => {
+
+        const img = e.target.closest('.card-image-holder').querySelector('.replace-img');
+        const btn = e.target.closest('.card').querySelector('.shop-card-btn');
+        img.classList.remove('hover-img');
+        btn.classList.remove('hover-btn');
+
+    });
+
+});

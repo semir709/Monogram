@@ -673,6 +673,8 @@ body {
     
 }
 
+/*card img*/
+
 .card .card-image-holder {
     width: 100%;
     height: 400px;
@@ -704,6 +706,32 @@ body {
     font-size: 13px;
 }
 
+.main-img { 
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.replace-img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .2s;
+}
+
+.hover-img {
+    opacity: 1 !important;
+}
+/* .card-image-holder:hover {
+    cursor: pointer;
+}
+
+.card-image-holder:hover .replace-img {
+    opacity: 1;
+} */
+
+/*card info*/
+
 .card-info-holder {
     margin-top: 5px;
 }
@@ -723,35 +751,72 @@ body {
     text-transform: uppercase;
 }
 
+.card-info-price-holder div {
+    position: relative;
+}
+
 .card-info-price-holder div p {
     font-size: var(--font-size-normal);
     font-weight: var(--font-weight-300);
     line-height: var(--line-height-medium);
 }
 
-.card-info-price-holder div button {
-    display: block;
-
+.card-info-price-holder div .shop-card-btn {
+    opacity: 0;
+    transition: opacity .2s;
     border: none;
     border-radius: 20px;
     background-color: var(--blue);
     color: #fff;
-    padding: 5px 20px;
+    width: 120px;
+    height: 30px;
     text-transform: uppercase;
 
     letter-spacing: var(--letter-spacing-x-small);
     font-size: var(--font-size-extra-small);
     line-height: var(--line-height-medium);
     font-weight: var(--font-weight-600);
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
+.hover-btn {
+    opacity: 1 !important;
+}
+
+
 .card-info-holder p {
-    display: none;
+    display: block;
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-300);
     line-height: var(--line-height-medium);
 }
 
+.hover-info h3{
+    color: #000;
+    cursor: pointer;
+}
+
+.hover-info p{
+    color: #000;
+    cursor: pointer;
+}
+
+/* .card-info-holder:hover h3{
+    cursor: pointer;
+
+    color: #000 !important;
+}
+.card-info-holder:hover p{
+    color: #000;
+    cursor: pointer;
+}
+
+.card-info-holder:hover .shop-card-btn {
+    opacity: 1;
+} */
 
 /*query*/
 
