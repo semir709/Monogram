@@ -860,6 +860,12 @@ body {
     line-height: var(--line-height-medium);
 }
 
+
+/*small-items*/
+
+.card-small {
+    width: 360px;
+}
 /*query*/
 
 @media (max-width: 991px) {
