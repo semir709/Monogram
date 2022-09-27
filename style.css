@@ -866,6 +866,139 @@ body {
 .card-small {
     width: 360px;
 }
+
+/*FOOTER*/
+
+.footer-holder {
+    width: 100%;
+    height: 280px;
+    background: var(--blue);
+    color: var(--light);
+    justify-content: space-around;
+    /* align-items: top; */
+
+}
+
+.footer-item {
+    height: 200px;
+}
+
+.footer-item p {
+    font-size: var(--font-size-super-small-em);
+    font-weight: var(--font-weight-600);
+    letter-spacing: var( --letter-spacing-x-small);
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.footer-item ul li a {
+    font-size: var(--font-size-small);
+    font-weight:var(--font-weight-300);
+    line-height: var(--line-height-medium);
+    letter-spacing: normal;
+
+    text-transform: capitalize;
+}
+
+.footer-item address {
+    font-size: var(--font-size-small);
+    font-style: normal;
+    font-weight:var(--font-weight-300);
+    line-height: var(--line-height-medium);
+    letter-spacing: normal;
+
+    text-transform: capitalize;
+}
+
+.footer-item ul {
+    display: block;
+
+}
+
+.last-item {
+    width: 400px;
+}
+
+.last-item p:first-child {
+    font-size: var(--font-size-super-small-em);
+    font-weight: var(--font-weight-600);
+    letter-spacing: var( --letter-spacing-x-small);
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.last-item p{
+
+    font-size: var(--font-size-small);
+    font-weight:var(--font-weight-300);
+    line-height: var(--line-height-medium);
+
+    text-transform: none;
+
+}
+
+.last-item form input {
+    border: 1px solid var(--light);
+    background-color: transparent;
+    color: var(--light);
+    font-weight: 300;
+    padding: 2px 5px;
+
+}
+
+.last-item form input::placeholder {
+    color: #fff;
+    font-size: 12px;
+}
+
+.last-item form input:focus-visible {
+    outline: 0;
+}
+
+
+.last-item form button {
+
+   background-color: var(--pink);
+   color: #212529;
+   border: none;
+   border-radius: 20px;
+   padding: 7px 20px;
+   margin-left: 20px;
+   opacity: .65;
+
+   font-size: var(--font-size-extra-small);
+   font-weight: var(--font-weight-600);
+   letter-spacing: var(--letter-spacing-x-small);
+
+   text-transform: uppercase;
+
+}
+
+.last-item .item-icons div{
+
+    background-color: var(--light);
+    margin-right: 10px;
+    border-radius: 100%;
+    position: relative;
+
+    width: 35px;
+    height: 35px;
+
+    margin: 10px 10px 10px 0px;
+
+}
+
+.last-item .item-icons div i {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--blue);
+}
+
 /*query*/
 
 @media (max-width: 991px) {
