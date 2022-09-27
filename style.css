@@ -602,6 +602,8 @@ body {
     height: 100vh;
     background-image: url('./assets/main-image.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     position: relative;
 
@@ -676,7 +678,7 @@ body {
 }
 
 .card {
-    width: 590px;
+    width: 48%;
     margin: 10px 5px;
     
 }
@@ -920,11 +922,11 @@ body {
 
 }
 
-.last-item {
+.sub-item {
     width: 400px;
 }
 
-.last-item p:first-child {
+.sub-item p:first-child {
     font-size: var(--font-size-super-small-em);
     font-weight: var(--font-weight-600);
     letter-spacing: var( --letter-spacing-x-small);
@@ -933,7 +935,7 @@ body {
     margin-bottom: 20px;
 }
 
-.last-item p{
+.sub-item p{
 
     font-size: var(--font-size-small);
     font-weight:var(--font-weight-300);
@@ -943,7 +945,7 @@ body {
 
 }
 
-.last-item form input {
+.sub-item form input {
     border: 1px solid var(--light);
     background-color: transparent;
     color: var(--light);
@@ -952,17 +954,17 @@ body {
 
 }
 
-.last-item form input::placeholder {
+.sub-item form input::placeholder {
     color: #fff;
     font-size: 12px;
 }
 
-.last-item form input:focus-visible {
+.sub-item form input:focus-visible {
     outline: 0;
 }
 
 
-.last-item form button {
+.sub-item form button {
 
    background-color: var(--pink);
    color: #212529;
@@ -980,7 +982,7 @@ body {
 
 }
 
-.last-item .item-icons div{
+.sub-item .item-icons div{
 
     background-color: var(--light);
     margin-right: 10px;
@@ -994,7 +996,7 @@ body {
 
 }
 
-.last-item .item-icons div i {
+.sub-item .item-icons div i {
     font-size: 25px;
     position: absolute;
     top: 50%;
@@ -1007,9 +1009,34 @@ body {
 
 @media(max-width:1200px) {
 
+    .items-holder{
+        width: 980px;
+    }
+    
+    .card {
+        width: 48%;
+    }
+
+    .card .card-image-holder {
+        height: 300px ;
+    }
+        
+
 }
 
 @media (max-width: 991px) {
+
+    .main-section {
+        height: 50vh;
+    }
+
+    .items-holder{
+        width: 740px;
+    }
+
+    .card .card-image-holder {
+        height: 250px ;
+    }
 
     /*navigatio query*/
 
@@ -1141,17 +1168,140 @@ body {
         margin-left: 10px !important;
     }
 
+    /*full image-section*/
+
+    .full-img-section {
+    
+        height: 300px;
+        
+    }
+
+    /*footer*/
+
+
+    .footer-holder {
+        flex-wrap: wrap;
+        height: fit-content;
+        padding-top: 40px;
+
+        justify-content: flex-start;
+
+        padding-left: 20px;
+
+    }
+
+    .footer-item  {
+        margin-right: 20%;
+        width: 100px;
+    }
+
+    .address-item {
+        order: 1;
+        
+    }
+
+    .quick-item {
+        order: 3;
+        margin-top: 80px;
+        
+    }
+
+    .help-item {
+        order: 4;
+        margin-top: 80px;
+    }
+
+    .info-item {
+        order: 5;
+        margin-top: 80px;
+    }
+
+    .sub-item {
+        order: 2;
+        width: 300px;
+    }
 }
 
 
 @media (max-width: 768px) {
 
+    .main-section {
+        height: 30vh;
+    }
+
+    .items-holder{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card {
+        width: 450px;
+    }
+
+    .card .card-image-holder {
+        height: 300px ;
+    }
+
+    /*FOOTER*/
+
+    /* .sub-item {
+        width: 60%;
+    } */
+
+    .footer-item  {
+        margin-right: 14%;
+        width: 100px;
+    }
+
+    .sub-item {
+        order: 2;
+        width: 230px;
+    }
+
+
 }
 
 @media (max-width: 576px) {
 
+    .main-info {
+        width: 90% !important;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /*FOOTER*/
+
+    .footer-item  {
+        margin-right: 5%;
+        width: 40%;
+    }
+
+     .address-item {
+        order: 2;
+        width: 40%;
+        margin-top: 80px;
+        
+    }
+    /*
+
+    .quick-item {
+        width: 40%;
+        
+    }
+
+    .help-item {
+        width: 40%;
+    }
+
+    .info-item {
+        width: 40%;
+    } */
+
+    .sub-item {
+        width: 90%;
+        order: 1;
+    }
+
 }
-
-/* @media (max-width: ) {
-
-} */
